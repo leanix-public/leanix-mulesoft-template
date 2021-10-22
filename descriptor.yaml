@@ -1,0 +1,15 @@
+#% Rest Connector Descriptor 1.0
+
+apiSpec:
+  url: /Users/dominikrose/mule/swagger.json
+
+connectorName: Integration
+
+connectorGav:
+  groupId: com.mulesoft.connectors
+  artifactId: integration-api
+  version: 1.0.0-SNAPSHOT
+
+baseUri:
+  value: /services/integration-api/v1
+  type: parameter
