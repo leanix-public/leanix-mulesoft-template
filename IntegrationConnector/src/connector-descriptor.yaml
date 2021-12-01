@@ -1,7 +1,7 @@
 #% Rest Connector Descriptor 1.0
 
 apiSpec:
-  url: /Users/dominikrose/mule/swagger.json
+  url: /Users/dominikrose/mule/leanix-mulesoft-template/swagger.json
 
 connectorName: Integration
 
