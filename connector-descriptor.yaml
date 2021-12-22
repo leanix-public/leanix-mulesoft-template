@@ -3,11 +3,11 @@
 apiSpec:
   url: /Users/dominikrose/mule/swagger.json
 
-connectorName: Integration
+connectorName: LeanIX Connector - Mule 4
 
 connectorGav:
   groupId: com.mulesoft.connectors
-  artifactId: integration-api
+  artifactId: mule4-leanix-connector
   version: 1.0.0-SNAPSHOT
 
 baseUri:

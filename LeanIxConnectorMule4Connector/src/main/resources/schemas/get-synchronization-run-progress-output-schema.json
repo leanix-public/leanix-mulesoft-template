@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/SyncRunInboundProgressReport",
+  "definitions": {"SyncRunInboundProgressReport": {
+    "additionalProperties": true,
+    "type": "object",
+    "properties": {
+      "processedContentCount": {
+        "description": "Number of elements processed from content in the current run level for Inbound processing.",
+        "type": "integer",
+        "example": 4872
+      },
+      "runLevelIndex": {
+        "description": "Identifier of the run level being executed, valid only for Inbound processing.",
+        "type": "integer",
+        "example": 2
+      },
+      "contentsCount": {
+        "description": "Number of elements build in the output content. Valid for Outbound",
+        "type": "integer"
+      },
+      "graphQLRequestCount": {
+        "description": "Number of GraphQL request made to Pathfinder backend in the current run level, not applicable for Outbound",
+        "type": "integer"
+      },
+      "warningsCount": {
+        "description": "Number of warnings detected during Outbound processing",
+        "type": "integer"
+      },
+      "errorCount": {
+        "description": "Number of errors in the current run level, valid for Inbound",
+        "type": "integer"
+      },
+      "itemsInScopeCount": {
+        "description": "Number of elements found in the Outbound Scope or the Scope of the processors",
+        "type": "integer"
+      },
+      "status": {
+        "description": "Status of the synchronization Job",
+        "type": "integer",
+        "example": "IN_PROGRESS"
+      }
+    }
+  }}
+}
