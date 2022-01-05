@@ -17,13 +17,14 @@ package com.mulesoft.connectors.leanixconnectormule4.internal.extension;
 
 import com.mulesoft.connectivity.rest.commons.api.error.RestError;
 import com.mulesoft.connectors.leanixconnectormule4.internal.config.LeanIxConnectorMule4Configuration;
+import org.mule.runtime.api.meta.Category;
 import org.mule.runtime.extension.api.annotation.Configurations;
 import org.mule.runtime.extension.api.annotation.Extension;
 import org.mule.runtime.extension.api.annotation.dsl.xml.Xml;
 import org.mule.runtime.extension.api.annotation.error.ErrorTypes;
 import org.mule.runtime.extension.api.annotation.license.RequiresEnterpriseLicense;
 
-@Extension(name = "Lean Ix Connector Mule4Connector")
+@Extension(name = "Lean Ix Connector Mule4Connector", category = Category.CERTIFIED)
 @Xml(prefix = "lean-ix-connector-mule-4")
 @Configurations({LeanIxConnectorMule4Configuration.class})
 @ErrorTypes(RestError.class)
