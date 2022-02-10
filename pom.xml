@@ -238,4 +238,10 @@
             <url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
         </repository>
     </repositories>
+
+    <scm>
+        <connection>scm:git:git://github.com/leanix-public/leanix-mulesoft-template</connection>
+        <developerConnection>scm:svn:https://github.com/leanix-public/leanix-mulesoft-template/blob/release/1.0.0</developerConnection>
+        <tag>leanix-mulesoft-template-1.0.0</tag>
+    </scm>
 </project>
